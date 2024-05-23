@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-1/2 mx-auto mt-32">
+        <form action="insert1.php" method="POST" class="border border-black">
+            <label for="username" class="ml-2">Username</label><br>
+            <input type="text" id="username" name="username" required class="border-black border mx-2">
+            <br><br>
+            <label for="password" class="ml-2">Password</label><br>
+            <input type="password" id="password" name="password" required class="border-black border mx-2">
+            <br><br>
+            <label for="email" class="ml-2">Email</label><br>
+            <input type="email" id="email" name="email" required class="border-black border mx-2">
+            <br><br>
+            <input type="hidden" name="redirect" value="asset.pdf">
+            <button type="submit" class="border border-black bg-pink-500 text-gray-50 py-2 px-4 rounded-md mx-2 my-4 box-shadow-lg">Submit</button>
+            <br>
+        </form>
+    </div>
+</body>
+</html>
